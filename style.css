@@ -84,3 +84,89 @@ main h2{
     padding: 10px 20px;
     border-radius: 40px;
 }
+section h2 {
+  text-align: left;
+  margin-top: 40px; /* 必要であれば余白も調整 */
+}
+.portfolio-contents{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.portfolio-item{
+    width: calc(25% - 15px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+.portfolio-item img{
+    width: 100%;
+    height: 200px;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.service-contents{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.service-item{
+    width: calc(33.33% - 15px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    gap: 15px;
+    align-items: flex-start;
+}
+.service-icon{
+    width: 50px;
+    flex-shrink: 0;
+}
+.icon-wrapper{
+    width: 50px;
+    flex-shrink: 0;
+}
+.icon-wrapper img{
+    width: 100%;
+    height: auto;
+}
+.text-wrapper h3{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.about-container{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.about-image{
+    width: 300px;
+    flex-shrink: 0;
+}
+.about-image img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+.about-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.about-content dl{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.about content dt{
+    grid-column: span 2;
+    font-weight: bold;
+}
